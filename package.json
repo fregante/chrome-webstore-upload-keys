@@ -18,21 +18,22 @@
   "license": "MIT",
   "author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
   "type": "module",
-  "bin": "cli.js",
+  "bin": "./dist/cli.js",
   "scripts": {
-    "test": "xo",
-    "start": "./cli.js"
+    "build": "ncc build cli.js",
+    "prepack": "npm run build",
+    "start": "ncc run cli.js",
+    "test": "xo"
+  },
+  "devDependencies": {
+    "@clack/prompts": "^0.7.0",
+    "@vercel/ncc": "^0.38.1",
+    "get-port": "^7.0.0",
+    "open": "^9.1.0",
+    "p-defer": "^4.0.0",
+    "xo": "^0.56.0"
   },
   "engines": {
     "node": ">=18"
-  },
-  "dependencies": {
-    "@clack/prompts": "^0.7.0",
-    "get-port": "^7.0.0",
-    "open": "^9.1.0",
-    "p-defer": "^4.0.0"
-  },
-  "devDependencies": {
-    "xo": "^0.56.0"
   }
 }
