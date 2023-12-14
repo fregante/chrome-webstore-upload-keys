@@ -1,6 +1,6 @@
 {
   "name": "chrome-webstore-upload-keys",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "CLI tool to generate OAuth keys for the Chrome Web Store",
   "keywords": [
     "chrome",
