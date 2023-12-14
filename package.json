@@ -1,0 +1,38 @@
+{
+  "name": "chrome-webstore-upload-keys",
+  "version": "0.0.0",
+  "description": "CLI tool to generate OAuth keys for the Chrome Web Store",
+  "keywords": [
+    "chrome",
+    "publish",
+    "webstore",
+    "store",
+    "extension",
+    "deploy",
+    "update",
+    "upload",
+    "cli"
+  ],
+  "repository": "fregante/chrome-webstore-upload-keys",
+  "funding": "https://github.com/sponsors/fregante",
+  "license": "MIT",
+  "author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
+  "type": "module",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "xo",
+    "start": "./cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "get-port": "^7.0.0",
+    "open": "^9.1.0",
+    "p-defer": "^4.0.0"
+  },
+  "devDependencies": {
+    "xo": "^0.56.0"
+  }
+}
