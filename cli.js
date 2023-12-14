@@ -2,7 +2,7 @@
 import process from 'node:process';
 import {createServer} from 'node:http';
 import * as p from '@clack/prompts';
-import open from 'open';
+import {open} from 'openurl';
 import getPort from 'get-port';
 import pDefer from 'p-defer';
 
