@@ -49,14 +49,15 @@ You can follow this complete guide or the official-but-partial one at: https://d
 	> <img width="771" alt="Publish app" src="https://user-images.githubusercontent.com/27696701/114265946-2da2a280-9a26-11eb-9567-c4e00f572500.png">
 
 0. Run this CLI tool to generate the required `refreshToken`
-  ```sh
-  npx chrome-webstore-upload-keys
-  ```
-  or
-  ```sh
-  bunx chrome-webstore-upload-keys
-  ```
 
+	```sh
+	npx chrome-webstore-upload-keys
+	```
+	or
+	```sh
+	bunx chrome-webstore-upload-keys
+	```
+	
 	> <img width="771" alt="chrome-webstore-upload-keys demo" src="./demo.gif">
 
 9001. Done. Now you should have ✅ `clientId`, ✅ `clientSecret` and ✅ `refreshToken`. You can use these for all your extensions, but don't share them!
