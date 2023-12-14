@@ -124,16 +124,17 @@ await tasks([
 	{
 		title: 'Opening the login page in the browser',
 		async task() {
+			const instructions = 'Complete the process in the browser. Follow its steps and warnings (this is your own personal app)';
 			if (group.open) {
 				await open(getLoginUrl(group.clientId));
-				return 'Page opened';
+				return instructions;
 			}
 
-			return 'Continue in: ' + getLoginUrl(group.clientId);
+			return instructions + '\n\n   ' + getLoginUrl(group.clientId);
 		},
 	},
 	{
-		title: 'Waiting for you to complete the process in the browser. Follow its steps and warnings (this is your own personal app)',
+		title: 'Waiting for you in the browser',
 		async task() {
 			code = await approvalCode.promise;
 			return 'Approval code received from Google';
