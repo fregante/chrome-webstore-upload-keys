@@ -55,8 +55,8 @@ async function getRefreshToken() {
 	const request = await fetch('https://accounts.google.com/o/oauth2/token', {
 		method: 'POST',
 		body: new URLSearchParams([
-			['client_id', group.clientId],
-			['client_secret', group.clientSecret],
+			['client_id', group.clientId.trim()],
+			['client_secret', group.clientSecret.trim()],
 			['code', code],
 			['grant_type', 'authorization_code'],
 			['redirect_uri', serverUrl], // Unused but required
@@ -83,7 +83,7 @@ function getLoginUrl(clientId) {
 	const url = new URL('https://accounts.google.com/o/oauth2/auth');
 	url.searchParams.set('response_type', 'code');
 	url.searchParams.set('access_type', 'offline');
-	url.searchParams.set('client_id', clientId);
+	url.searchParams.set('client_id', clientId.trim());
 	url.searchParams.set('scope', 'https://www.googleapis.com/auth/chromewebstore');
 	url.searchParams.set('redirect_uri', serverUrl);
 	return url.href;
@@ -92,10 +92,6 @@ function getLoginUrl(clientId) {
 p.intro('Follow the steps at this URL to generate the API keys, then enter them below to generate the refresh token.\n   https://github.com/fregante/chrome-webstore-upload-keys');
 const group = await p.group(
 	{
-		// ExtensionId: () => p.text({
-		// 	message: 'Extension ID:',
-		// 	placeholder: 'e.g. bdeobgpddfaegbjfinhldnkfeieakdaf, it’s in the Chrome Web Store URL',
-		// }),
 		clientId: () => p.text({
 			message: 'Client ID:',
 			placeholder: 'e.g. 960453266371-2qcq5fppm3d5e.apps.googleusercontent.com',
