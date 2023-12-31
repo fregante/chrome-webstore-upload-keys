@@ -6,6 +6,10 @@ import {open} from 'openurl';
 import getPort from 'get-port';
 import pDefer from 'p-defer';
 
+if (typeof fetch !== 'function') {
+	throw new TypeError('This script requires Node.js 18.0 or newer because it relies on the global `fetch` function.');
+}
+
 const approvalCode = pDefer();
 const port = await getPort();
 const localhost = '127.0.0.1';
