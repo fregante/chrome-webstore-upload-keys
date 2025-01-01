@@ -1,8 +1,8 @@
 # How to generate Google API keys
 
-> Guide and OAuth helper to generate keys
+> Guide and OAuth helper to generate keys for Chrome Extensions upload
 
-Companion to [Web Store Upload](https://github.com/fregante/chrome-webstore-upload).
+Companion to [Chrome Web Store Upload](https://github.com/fregante/chrome-webstore-upload) to publish extensions.
 
 You can follow this complete guide or the official-but-partial one at: https://developer.chrome.com/docs/webstore/using-api
 
