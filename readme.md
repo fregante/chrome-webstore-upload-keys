@@ -48,6 +48,10 @@ You can follow this complete guide or the official-but-partial one at: https://d
 
 	> <img width="771" alt="Publish app" src="https://user-images.githubusercontent.com/27696701/114265946-2da2a280-9a26-11eb-9567-c4e00f572500.png">
 
+0. **Important:** In the **Data Access** section of Google Cloud, you do **not** need to request any scopes. Specifically, do **not** include `https://www.googleapis.com/auth/chromewebstore`, as it is not required and adding it will trigger Google's verification process for sensitive scopes, which is unnecessary for publishing extensions.
+
+    > This is different from the official documentation at [Google's guide](https://developer.chrome.com/docs/webstore/using-api), which suggests adding scopes. However, for this tool, scopes are unnecessary and should be avoided.
+
 0. Run this CLI tool to generate the required `refreshToken`
 
 	```sh
