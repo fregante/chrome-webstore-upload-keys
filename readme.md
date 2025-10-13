@@ -37,7 +37,7 @@ You can follow this complete guide or the official-but-partial one at: https://d
 
 	> <img width="821" height="263" alt="Create OAuth client ID" src="https://github.com/user-attachments/assets/3b732578-26d2-46db-b01b-d0b395fb524a" />
 
-0. Save your ✅ `clientId`
+0. Save your ✅ `CLIENT_ID`
 
 	> <img width="821" height="488" alt="OAuth client created" src="https://github.com/user-attachments/assets/f239257e-3326-455e-a7fc-8f08bb443418" />
 
@@ -49,14 +49,9 @@ You can follow this complete guide or the official-but-partial one at: https://d
 
 	> <img width="821" height="337" alt="Client ID detail" src="https://github.com/user-attachments/assets/b4ac2a9b-3a7d-4944-907a-39233182e50d" />
 
-0. Save your ✅ `clientSecret`
+0. Save your ✅ `CLIENT_SECRET`
 
     > <img width="821" height="494" alt="Client ID secret" src="https://github.com/user-attachments/assets/d43ef593-4a4a-4fb5-8c50-fbebfb347926" />
-
-0. Visit https://console.cloud.google.com/apis/credentials/consent
-0. Click **PUBLISH APP** and confirm
-
-	> <img width="771" alt="Publish app" src="https://user-images.githubusercontent.com/27696701/114265946-2da2a280-9a26-11eb-9567-c4e00f572500.png">
 
 0. Run this CLI tool to generate the required `refreshToken`
 
@@ -70,10 +65,10 @@ You can follow this complete guide or the official-but-partial one at: https://d
 	
 	> <img width="771" alt="chrome-webstore-upload-keys demo" src="./demo.gif">
 
-9001. Done. Now you should have ✅ `clientId`, ✅ `clientSecret` and ✅ `refreshToken`. You can use these for all your extensions, but don't share them!
+9001. Done. Now you should have ✅ `CLIENT_ID`, ✅ `CLIENT_SECRET` and ✅ `REFRESH_TOKEN`. You can use these for all your extensions, but don't share them!
 
 ## What the CLI tool does
 
-1. Requests the two keys you have
+1. Prompts you for the two keys you just generated
 2. Opens a local server to handle the OAuth redirect from Google's servers with an `approvalCode`
 3. Uses Google's `oauth2` API to request a `refreshToken`
