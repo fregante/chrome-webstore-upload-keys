@@ -15,19 +15,20 @@ You can follow this complete guide or the official-but-partial one at: https://d
 	> <img width="772" alt="Google APIs: Create project" src="https://user-images.githubusercontent.com/1402241/77865620-9a8a3680-722f-11ea-99cb-b09e5c0c11ec.png">
 
 0. Enter `chrome-webstore-upload` and **Create**
-0. Visit https://console.cloud.google.com/apis/credentials/consent
-0. Select on **External** and **Create**
+0. Visit https://console.cloud.google.com/auth/overview
+0. Click **Get started**
 
-	> <img width="804" alt="OAuth Consent Screen" src="https://user-images.githubusercontent.com/1402241/133878019-f159f035-2b76-4686-a461-0e0005355da6.png">
+    > <img width="621" height="514" alt="OAuth Overview" src="https://github.com/user-attachments/assets/0456e23e-a64a-43cf-a9cc-a941cb9d2402">
 
-0. Only enter the Application name (e.g. `chrome-webstore-upload`) and required email fields, and click **Save**
+0. Enter the Application name (e.g. `chrome-webstore-upload`) and required email field
 
-	> <img width="475" alt="Consent screen configuration" src="https://user-images.githubusercontent.com/1402241/77865809-82ff7d80-7230-11ea-8a96-e381d55524c5.png">
+	> <img width="821" height="390" alt="App Information" src="https://github.com/user-attachments/assets/bfe65939-0375-4497-bbf5-c2e9b5bceba7" />
 
-0. On the 3rd screen, add your own email address:
+0. Select **Internal**
 
-	> <img width="632" alt="Test users selection" src="https://user-images.githubusercontent.com/1402241/106213510-7c180300-6192-11eb-97b4-b4ae92424bf1.png">
+	> <img width="821" height="393" alt="Audience selection" src="https://github.com/user-attachments/assets/e3fe4fa2-854b-4b07-b35a-41ab32a81d4f" />
 
+0. Fill in any required fields until **Create** becomes available
 0. Visit https://console.developers.google.com/apis/library/chromewebstore.googleapis.com
 0. Click **Enable**
 0. Visit https://console.developers.google.com/apis/credentials
