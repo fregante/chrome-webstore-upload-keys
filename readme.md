@@ -29,20 +29,29 @@ You can follow this complete guide or the official-but-partial one at: https://d
 	> <img width="821" height="393" alt="Audience selection" src="https://github.com/user-attachments/assets/e3fe4fa2-854b-4b07-b35a-41ab32a81d4f" />
 
 0. Fill in any required fields until **Create** becomes available
-0. Visit https://console.developers.google.com/apis/library/chromewebstore.googleapis.com
-0. Click **Enable**
-0. Visit https://console.developers.google.com/apis/credentials
-0. Click **Create credentials** > **OAuth client ID**:
+0. Click **Create OAuth client**
 
-	> <img width="771" alt="Create credentials" src="https://user-images.githubusercontent.com/1402241/77865679-e89f3a00-722f-11ea-942d-5245091f22b8.png">
+    > <img width="821" height="433" alt="OAuth Overview" src="https://github.com/user-attachments/assets/9446731a-f6b0-4c96-8aa9-482a962f08b8" />
 
-0. Select **Desktop app**, enter `Chrome Webstore Upload` and click **Create**
+0. Select **Desktop app**, enter `Chrome Webstore Upload` as the name and click **Create**
 
-	> <img width="568" alt="Create OAuth client ID" src="https://user-images.githubusercontent.com/1402241/163124196-c4bb4f26-9766-4766-bb81-3982875d3a84.png">
+	> <img width="821" height="263" alt="Create OAuth client ID" src="https://github.com/user-attachments/assets/3b732578-26d2-46db-b01b-d0b395fb524a" />
 
-0. Save your ✅ `clientId` and ✅ `clientSecret`:
+0. Save your ✅ `clientId`
 
-	> <img width="554" alt="OAuth client created" src="https://user-images.githubusercontent.com/1402241/228934028-1ef55a41-cc92-4ecf-967a-1984a363c21d.png">
+	> <img width="821" height="488" alt="OAuth client created" src="https://github.com/user-attachments/assets/f239257e-3326-455e-a7fc-8f08bb443418" />
+
+0. Open the "Chrome Webstore Upload" client on screen
+
+	> <img width="821" height="293" alt="Client ID list" src="https://github.com/user-attachments/assets/80679902-1926-42d7-a9b3-5533214bc95d" />
+
+0. Click the Info button in the top right
+
+	> <img width="821" height="337" alt="Client ID detail" src="https://github.com/user-attachments/assets/b4ac2a9b-3a7d-4944-907a-39233182e50d" />
+
+0. Save your ✅ `clientSecret`
+
+    > <img width="821" height="494" alt="Client ID secret" src="https://github.com/user-attachments/assets/d43ef593-4a4a-4fb5-8c50-fbebfb347926" />
 
 0. Visit https://console.cloud.google.com/apis/credentials/consent
 0. Click **PUBLISH APP** and confirm
