@@ -53,6 +53,11 @@ You can follow this complete guide or the official-but-partial one at: https://d
 
     > <img width="821" height="494" alt="Client ID secret" src="https://github.com/user-attachments/assets/d43ef593-4a4a-4fb5-8c50-fbebfb347926" />
 
+0. Visit https://console.cloud.google.com/apis/library/chromewebstore.googleapis.com
+0. Click **Enable**
+
+    > <img width="821" height="300" alt="CWS API toggle" src="https://github.com/user-attachments/assets/3cb2d142-46cf-4ca4-8e52-ce43e12767b0" />
+
 0. Run this CLI tool to generate the required `refreshToken`
 
 	```sh
