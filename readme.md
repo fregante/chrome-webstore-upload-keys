@@ -15,38 +15,48 @@ You can follow this complete guide or the official-but-partial one at: https://d
 	> <img width="772" alt="Google APIs: Create project" src="https://user-images.githubusercontent.com/1402241/77865620-9a8a3680-722f-11ea-99cb-b09e5c0c11ec.png">
 
 0. Enter `chrome-webstore-upload` and **Create**
-0. Visit https://console.cloud.google.com/apis/credentials/consent
-0. Select on **External** and **Create**
+0. Visit https://console.cloud.google.com/auth/overview
+0. Click **Get started**
 
-	> <img width="804" alt="OAuth Consent Screen" src="https://user-images.githubusercontent.com/1402241/133878019-f159f035-2b76-4686-a461-0e0005355da6.png">
+    > <img width="621" height="514" alt="OAuth Overview" src="https://github.com/user-attachments/assets/0456e23e-a64a-43cf-a9cc-a941cb9d2402">
 
-0. Only enter the Application name (e.g. `chrome-webstore-upload`) and required email fields, and click **Save**
+0. Enter the Application name (e.g. `chrome-webstore-upload`) and required email field
 
-	> <img width="475" alt="Consent screen configuration" src="https://user-images.githubusercontent.com/1402241/77865809-82ff7d80-7230-11ea-8a96-e381d55524c5.png">
+	> <img width="821" height="390" alt="App Information" src="https://github.com/user-attachments/assets/bfe65939-0375-4497-bbf5-c2e9b5bceba7" />
 
-0. On the 3rd screen, add your own email address:
+0. Select **Internal**
 
-	> <img width="632" alt="Test users selection" src="https://user-images.githubusercontent.com/1402241/106213510-7c180300-6192-11eb-97b4-b4ae92424bf1.png">
+	> <img width="821" height="393" alt="Audience selection" src="https://github.com/user-attachments/assets/e3fe4fa2-854b-4b07-b35a-41ab32a81d4f" />
 
-0. Visit https://console.developers.google.com/apis/library/chromewebstore.googleapis.com
+0. Fill in any required fields until **Create** becomes available
+0. Click **Create OAuth client**
+
+    > <img width="821" height="433" alt="OAuth Overview" src="https://github.com/user-attachments/assets/9446731a-f6b0-4c96-8aa9-482a962f08b8" />
+
+0. Select **Desktop app**, enter `Chrome Webstore Upload` as the name and click **Create**
+
+	> <img width="821" height="263" alt="Create OAuth client ID" src="https://github.com/user-attachments/assets/3b732578-26d2-46db-b01b-d0b395fb524a" />
+
+0. Save your ✅ `CLIENT_ID`
+
+	> <img width="821" height="488" alt="OAuth client created" src="https://github.com/user-attachments/assets/f239257e-3326-455e-a7fc-8f08bb443418" />
+
+0. Open the "Chrome Webstore Upload" client on screen
+
+	> <img width="821" height="293" alt="Client ID list" src="https://github.com/user-attachments/assets/80679902-1926-42d7-a9b3-5533214bc95d" />
+
+0. Click the Info button in the top right
+
+	> <img width="821" height="337" alt="Client ID detail" src="https://github.com/user-attachments/assets/b4ac2a9b-3a7d-4944-907a-39233182e50d" />
+
+0. Save your ✅ `CLIENT_SECRET`
+
+    > <img width="821" height="494" alt="Client ID secret" src="https://github.com/user-attachments/assets/d43ef593-4a4a-4fb5-8c50-fbebfb347926" />
+
+0. Visit https://console.cloud.google.com/apis/library/chromewebstore.googleapis.com
 0. Click **Enable**
-0. Visit https://console.developers.google.com/apis/credentials
-0. Click **Create credentials** > **OAuth client ID**:
 
-	> <img width="771" alt="Create credentials" src="https://user-images.githubusercontent.com/1402241/77865679-e89f3a00-722f-11ea-942d-5245091f22b8.png">
-
-0. Select **Desktop app**, enter `Chrome Webstore Upload` and click **Create**
-
-	> <img width="568" alt="Create OAuth client ID" src="https://user-images.githubusercontent.com/1402241/163124196-c4bb4f26-9766-4766-bb81-3982875d3a84.png">
-
-0. Save your ✅ `clientId` and ✅ `clientSecret`:
-
-	> <img width="554" alt="OAuth client created" src="https://user-images.githubusercontent.com/1402241/228934028-1ef55a41-cc92-4ecf-967a-1984a363c21d.png">
-
-0. Visit https://console.cloud.google.com/apis/credentials/consent
-0. Click **PUBLISH APP** and confirm
-
-	> <img width="771" alt="Publish app" src="https://user-images.githubusercontent.com/27696701/114265946-2da2a280-9a26-11eb-9567-c4e00f572500.png">
+    > <img width="821" height="300" alt="CWS API toggle" src="https://github.com/user-attachments/assets/3cb2d142-46cf-4ca4-8e52-ce43e12767b0" />
 
 0. Run this CLI tool to generate the required `refreshToken`
 
@@ -60,10 +70,10 @@ You can follow this complete guide or the official-but-partial one at: https://d
 	
 	> <img width="771" alt="chrome-webstore-upload-keys demo" src="./demo.gif">
 
-9001. Done. Now you should have ✅ `clientId`, ✅ `clientSecret` and ✅ `refreshToken`. You can use these for all your extensions, but don't share them!
+9001. Done. Now you should have ✅ `CLIENT_ID`, ✅ `CLIENT_SECRET` and ✅ `REFRESH_TOKEN`. You can use these for all your extensions, but don't share them!
 
 ## What the CLI tool does
 
-1. Requests the two keys you have
+1. Prompts you for the two keys you just generated
 2. Opens a local server to handle the OAuth redirect from Google's servers with an `approvalCode`
 3. Uses Google's `oauth2` API to request a `refreshToken`
