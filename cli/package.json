@@ -1,6 +1,6 @@
 {
   "name": "chrome-webstore-upload-keys",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "CLI tool to generate OAuth keys for the Chrome Web Store",
   "readme": "See details on https://github.com/fregante/chrome-webstore-upload-keys",
   "keywords": [
