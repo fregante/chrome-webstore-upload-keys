@@ -14,4 +14,4 @@ Follow the complete instructions at https://github.com/fregante/chrome-webstore-
 
 ## Demo
 
-![CLI tool demo](./demo.gif)
+![CLI tool demo](https://raw.githubusercontent.com/fregante/chrome-webstore-upload-keys/main/cli/demo.gif)
