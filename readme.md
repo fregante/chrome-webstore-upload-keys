@@ -67,8 +67,8 @@ You can follow this complete guide or the official-but-partial one at: https://d
 	```sh
 	bunx chrome-webstore-upload-keys
 	```
-	
-	> <img width="771" alt="chrome-webstore-upload-keys demo" src="./demo.gif">
+
+	> <img width="771" alt="chrome-webstore-upload-keys demo" src="./cli/demo.gif">
 
 9001. Done. Now you should have ✅ `CLIENT_ID`, ✅ `CLIENT_SECRET` and ✅ `REFRESH_TOKEN`. You can use these for all your extensions, but don't share them!
 
